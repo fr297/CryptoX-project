@@ -1,0 +1,242 @@
+body{
+    background: #000;
+    box-sizing: border-box;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.info-block{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.links{
+    width: 100%;
+    padding: 0;
+}
+nav{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+}
+.nav1{
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.nav2{
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.nav1::after{
+    content: "";
+  background: azure;
+  transition: width 0.3s ease;
+  position: absolute;
+  width: 0%;
+  left: 0;
+  bottom: 2px;
+  height: 2px;
+}
+.nav1:hover::after{
+    width: 100%;
+}
+.name{
+ width: 50%;
+ padding-left: 100px;
+ padding-top: 150px;
+ padding-bottom: 20px;
+ padding-right: 20px;
+}
+h1{
+    font-size: 55px;
+    font-weight: 400;
+    margin: 0;
+}
+.info{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 20px;
+    padding-bottom: 85px;
+    box-sizing: border-box;
+}
+p{
+    color: rgb(130, 130, 130);
+    font-size: 15px;
+    font-weight: 200;
+    margin: 0;
+    box-sizing: border-box;
+}
+.get-started-button{
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+.get-started{
+    font-size: 15px;
+    text-decoration: none;
+    width: 230px;
+    height: 55px;
+    background: rgb(119, 192, 10);
+    color: white;
+    padding: 0;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+}
+.laptop{
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.image{
+    width: 420px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1100px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .info-block{
+        margin-left: 0;
+        margin-right: 0;
+}
+.laptop{
+    padding-left: 0;
+    padding-right: 0;
+}
+.information{
+    width: 60%;
+}
+}
+@media screen and (max-width: 950px){
+    .laptop{
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .info{
+        padding-bottom: 30px;
+        padding-right: 0;
+        padding-left: 50px;
+    }
+    .get-started-button{
+        padding-left: 50px;
+    }
+    .name{
+        padding-left: 50px;
+    }
+    .image{
+        width: 390px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .name{
+        padding-top: 100px;
+    }
+    .laptop{
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 730px){
+       nav{
+        flex-direction: row;
+       }
+       .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       .laptop{
+        padding: 0;
+       }
+       .name{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 80px;
+       }
+       .get-started-button{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+       }
+       .info{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+       }
+       p{
+        text-align: center;
+       }
+}
+@media screen and (max-width: 570px){
+    .information{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .get-started{
+        width: 200px;
+        height: 45px;
+        font-size: 13px;
+        color: white;
+    }
+}
+@media screen and (max-width: 410px) {
+    .image{
+        width: 340px;
+    }
+    p{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .name{
+        padding-bottom: 10px;
+    }
+    .information{
+        width: 90%;
+    }
+}
