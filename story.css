@@ -1,0 +1,182 @@
+body{
+    background: #000;
+    box-sizing: border-box;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.page{
+    padding: 40px;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+}
+.nav1{
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.nav1::after{
+  content: "";
+  background: azure;
+  transition: width 0.3s ease;
+  position: absolute;
+  width: 0%;
+  left: 0;
+  bottom: 2px;
+  height: 2px;
+}
+.nav1:hover::after{
+    width: 100%;
+}
+.text1{
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+.text2{
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+.text3{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    margin: 0;
+    padding-top: 110px;
+}
+.r1{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+.r2{
+    display: flex;
+    flex-direction: row;
+}
+.paragraph{
+    width: 50%;
+    font-size: 35px;
+    color: white;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+.paragraph1{
+    width: 50%;
+    font-size: 35px;
+    color: white;
+    padding-top: 20px;
+    padding-right: 40px;
+    margin: 0;
+}
+p{
+    color: white;
+    font-size: 21px;
+}
+@media screen and (max-width: 1000px){
+    .page{
+        padding: 0;
+    }
+    .content{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .r1{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .r2{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .text1{
+        width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .text3{
+        width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .text2{
+        width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .paragraph{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .paragraph1{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .first{
+        margin-bottom: 0;
+    }
+    .second{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .paragraph{
+        font-size: 29px;
+    }
+    .paragraph1{
+        font-size: 29px;
+    }
+    p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .paragraph{
+        font-size: 24px;
+    }
+    .paragraph1{
+        font-size: 24px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
